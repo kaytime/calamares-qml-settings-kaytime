@@ -1,0 +1,61 @@
+#! /bin/bash
+
+set -x
+
+### (force) Add kwin rules for calamares
+
+xdg_file_path="$HOME/.config"
+
+[ -f $xdg_file_path/kwinrulesrc ] && {
+    rm $xdg_file_path/kwinrulesrc 
+    } || {
+    touch "$xdg_file_path/kwinrulesrc"
+}
+
+>> "$xdg_file_path/kwinrulesrc" printf "%s\n" \
+    '[1]' \
+    'Description=Application settings for calamares' \
+    'above=true' \
+    'aboverule=2' \
+    'desktopfile=io.calamares.calamares' \
+    'desktopfilerule=3' \
+    'fullscreen=true' \
+    'fullscreenrule=2' \
+    'position=-2,30' \
+    'positionrule=0' \
+    'types=1' \
+    'wmclass=calamares calamares' \
+    '' \
+    '[2]' \
+    'Description=Preferencias para la aplicación libreoffice-startcenter' \
+    'position=-2,30' \
+    'positionrule=3' \
+    'wmclass=libreoffice libreoffice-startcenter' \
+    'wmclasscomplete=true' \
+    'wmclassmatch=1' \
+    '' \
+    '[General]' \
+    'count=2'
+
+sleep 1
+
+#   restart kwin otherwise rules aren't loaded
+
+if pgrep -x "kwin_x11" > /dev/null
+    then
+        kwin_x11 --replace &
+    else
+        kwin_wayland --replace &
+fi
+
+sleep 1
+
+#   Also restart plasmashell and latte-dock because why the F not
+
+if pgrep -x "plasmashell" > /dev/null
+    then
+        kquitapp5 plasmashell && kstart5 plasmashell &
+        sleep 1 && latte-dock --replace &
+fi
+
+exit 0

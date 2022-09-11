@@ -1,0 +1,15 @@
+Source: calamares-qml-settings-kaytime
+Section: kde
+Priority: optional
+Maintainer: Steph DGenius <stephanetse@gmail.com>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.6
+Homepage: https://kaytime.github.io/
+Vcs-Git: https://github.com/kaytime/calamares-settings-kaytime.git
+
+Package: calamares-qml-settings-kaytime
+Architecture: any
+Replaces: calamares-settings-kaytime
+Depends: ${shlibs:Depends}, ${misc:Depends}, calamares
+Description: Settings for Calamares.
+ Kaytime branding package and settings for the Calamares installer.

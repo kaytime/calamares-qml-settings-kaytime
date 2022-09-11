@@ -1,0 +1,22 @@
+[Desktop Entry]
+Categories=Settings
+Comment[en_US]=Install Kaytime OS in this computer.
+Comment=Install Kaytime OS in this computer.
+Exec=/usr/bin/sudo -E calamares -d
+GenericName[en_US]=Installer
+GenericName=Installer
+Icon=live-installer
+MimeType=
+Name[en_US]=Install Kaytime
+Name=Install Kaytime
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.0
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+X-MultipleArgs=false

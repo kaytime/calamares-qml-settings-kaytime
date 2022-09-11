@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.001" height="15.36" viewBox="0 0 14.001 15.36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="calamares_product_icon" transform="translate(-4 -1033.682)">
+    <g id="icon" transform="translate(-16.137 -43.823)">
+      <rect id="shapeone" class="cls-1" width="3.988" height="14.955" rx="1.994" transform="translate(25.739 1077.505) rotate(22)"/>
+      <rect id="shapetwo" class="cls-1" width="3.988" height="5.982" rx="1.994" transform="matrix(0.966, -0.259, 0.259, 0.966, 28.738, 1086.851)"/>
+    </g>
+  </g>
+</svg>

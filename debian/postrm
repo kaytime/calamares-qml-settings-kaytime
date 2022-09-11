@@ -1,0 +1,4 @@
+#! /bin/bash
+
+find /home/ -iname 'org.kaytime.installer.desktop' -delete
+find /usr/share/applications/ -iname 'org.kaytime.installer.desktop' -delete
