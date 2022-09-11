@@ -1,6 +1,6 @@
-# Calamares Settings Kaytime [![Build and push packages to PackageCloud.](https://github.com/Nitrux/calamares-settings-nitrux/actions/workflows/build.yml/badge.svg)](https://github.com/Nitrux/calamares-settings-nitrux/actions/workflows/build.yml)
+# Calamares Settings Kaytime [![PackageCloud.](https://github.com/kaytime/calamares-qml-settings-kaytime/actions/workflows/build.yml/badge.svg)](https://github.com/kaytime/calamares-qml-settings-kaytime/actions/workflows/build.yml)
 
-This is the repository for the custom Calamares settings used in Kaytim.
+This is the repository for the custom Calamares settings used in Kaytime.
 
 # Issues
 
