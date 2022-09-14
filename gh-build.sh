@@ -8,6 +8,8 @@ apt -qq -yy install equivs git devscripts lintian --no-install-recommends
 ### Install Dependencies
 mk-build-deps -i -t "apt-get --yes" -r
 
+chmod -x "debian/install"
+
 ### Build Deb
 debuild -b -uc -us
 
